@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<main>
+
+    <header class="header">
+        <h1>Dailist</h1>
+        <span>Your to do list for today</span>
+    </header>
+
+    <section class="prog-container">
+        <div class="progressbar">
+         <div class="prog-fill" id="progressFill" data-progress="0"></div>
+        </div>
+    </section>
+       
+    <form class="addtask" id="taskForm">
+        <input type="text" class="add-task" id="task-input" placeholder="Add a task">
+        <button type="submit" class="add-button" id="addBtn">+</button>
+    </form>
+
+    <section class="filter" id="filterContainer">
+        <button type="button" class="filter-btn active" data-filter="all">All</button>
+        <button type="button" class="filter-btn" data-filter="high">High</button>
+        <button type="button" class="filter-btn" data-filter="normal">Normal</button>
+        <button type="button" class="filter-btn" data-filter="low">Low</button>
+        <button type="button" class="filter-btn" data-filter="due">Due</button>
+    </section>
+
+    <section class="tasks">
+        <ul id="taskList">
+            <li class="task-item" data-id="1" data-priority="high" data-completed="false">
+                <input type="checkbox" class="task-check">
+                <span class="task-text">Buy milk</span>
+                <button class="delete-btn">✕</button>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p id="taskStat">0 task - 0 completed</p>
+    </footer>
+
+</main>
+    
+</body>
+</html>
